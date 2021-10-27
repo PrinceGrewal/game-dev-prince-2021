@@ -59,4 +59,14 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "You selected: " + x;
 }
 </script>
+<script>
+Enter your name: <input type="text" onfocus="myFunction(this)">
+
+<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+<script>
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+</script>
 <br>
