@@ -40,5 +40,23 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "Hi there";
 }
 </script>
+<p>Select a country from the list.</p>
 
+<select id="mySelect" onchange="myFunction()">
+  <option value="America">America</option>
+  <option value="Canada">Canada</option>
+  <option value="Germany">Germany</option>
+  <option value="United Kingdom">United Kingdom</option>
+</select>
+
+<p>When you select a country, a function is triggered which outputs the value of the selected country.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
 <br>
