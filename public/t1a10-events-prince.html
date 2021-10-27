@@ -58,5 +58,15 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "You selected: " + x;
 }
 </script>
+Enter your name: <input type="text" id="fname" onblur="myFunction()">
+
+<p>When you leave the box, it automatically trasnforms the input text upper case.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
 
 <br>
