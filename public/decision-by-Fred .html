@@ -24,13 +24,17 @@ if (myIn01 >= 3){
 
 }">
 
-<input type=button value ="if...else" onclick="{
-let myIn01 = parseFloat(document.getElementById('myNum01').value)
-if (myIn01>=3)}
-document.getElementById('myDivol').innerHTML = myIn01 + is greater than 3 '
-} else {
-document.getElementById('myDivo1').innerHTML = myIn01 + is less than 3 '}
-}">
+<h2>JavaScript if</h2>
+
+<p>Display "Good day!" if the hour is less than 18:00:</p>
+
+<p id="demo">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+</script>
 
 <input type = button value ="Complex if" onclick = "{
 letmyIn01 parseFloat(document.getElementById(myNumbl)value)
