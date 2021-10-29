@@ -38,6 +38,7 @@ document.getElementById('myB01').innerHTML = 'This is cool'
 function myFunction() {
   document.getElementById("demo").innerHTML = "Hi there";
 }
+  <br>
 </script>
   
 <p>Type something in the box down below..</p>
@@ -49,6 +50,7 @@ function myFunction() {
   alert("You pressed a key inside the input field");
 }
 </script>
+  <br>
 <p>Write something in the box below..</p>
 
 <input type="text" id="myInput" oninput="myFunction()">
@@ -61,7 +63,7 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "You wrote: " + x;
 }
 </script>
- 
+ <br>
 <form action="/action_page.php" method="get">
   Name: <input type="text" oninvalid="alert('You must fill out the form!');"name="fname" required>
   <input type="submit" value="Submit">
@@ -73,7 +75,7 @@ AN ALERT MESSAGE WILL OCCUR.</p>
 <p>Press a key inside the text field to set a red background color.</p>
 
 <input type="text" id="demo">
-
+<br>
 <script>
 document.getElementById("demo").onkeypress = function() {myFunction()};
 
@@ -85,8 +87,10 @@ function myFunction() {
 Enter your name: <input type="text" id="fname" onkeyup="myFunction()">
 
 <script>
+  <br>
 function myFunction() {
   var x = document.getElementById("fname");
   x.value = x.value.toUpperCase();
 }
 </script>
+<br>
