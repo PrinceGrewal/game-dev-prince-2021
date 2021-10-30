@@ -1,4 +1,4 @@
-Version 0.0.1
+Version 0.0.2
 <h2 align=center>t1a06-varaibles-by -Fred.html </h2>
 
 <a href=""> You Fix Good reference to Variables in Javascript
@@ -8,26 +8,26 @@ Other Languages use bool, int , float , char, string ,
 int_8 , int_16 etc <br>
 
 Note: Javascript does use var and let for local variables <br>
-For Global variables Mr. Ellis prefers to use document.myvarName
 
 
 <h4> Example input output code</h4>
 <pre>
 
-         let myIn01 document.getElementById ('myTexto1') . value
-         document.getElementById ('myDivo1') . innerHTML = myIn01
+         let myIn01 = document.getElementById('myText01').value
+         document.getElementById('myDiv01').innerHTML = myIn01
 </pre>
 <h4> Example working code </h4>
-<input id = " myText01 " type = text value = " The dog > <br>
-<input type = button value = " Show Variable " onclick = " {
-let myIn01 = document.getElementById ( 'myTexto1 ' ) .value
-document.getElementById ( 'myDivoi ' ) .innerHTML = my In01
+<input id = "myText01" type=text value = " The dog " > <br>
 
-} " ><br>
+<input type = button value = "Show Variable" onclick ="{
+let myIn01 = document.getElementById ('myText01').value
+document.getElementById ('myDiv01' ).innerHTML = myIn01
 
-< input type = button value = " Using no variable " onclick = " {
-    document.getElementById ( 'myDivo1 ') . innerHTML =
-      document.getElementById ( 'myTexto1 ' ) .value
-} " > <br>
+}"><br>
 
-< div id = "myDivo1 " >... < / div >
+<input type=button value="Using no variable" onclick = "{
+    document.getElementById ('myDiv01').innerHTML =
+      document.getElementById('myText01').value
+}"><br>
+
+<div id ="myDiv01">... </div>
