@@ -1,4 +1,4 @@
-Versioon 0.0.4
+Versioon 0.0.5
 <h2 align=center>t2a01-arrays-by-Fred.html</h2>
 
 <a href="">Good refrence to Jvascript Arrays</a><br>
@@ -33,10 +33,21 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
  document.getElementById('myDiv01').innerHTML = mySum
  }">
 
-<script>
-const countries = ["America", "Canada", "Germany"];
-document.getElementById("demo").innerHTML = Countries;
-</script>
+<input type=button value="Click Here" onClick="{
+   let myTemp = document.getElementById('myText01').value
+   let mySum = ''
+   document.getElementById('myDiv01').innerHTML = ' '
+                                                    
+ myArray = new Array ()
+ myArray[0] = 'Germany'
+ myArray[1] = 'Canada'
+  myArray[2] = 'America'
+                                                    
+ for (let myLoop=0; myLoop < myTemp; myLoop++){
+ mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] +'<br>'
+ }
+ document.getElementById('myDiv01').innerHTML = mySum
+ }">
 
 <div id="myDiv01">...</div>
 <br>
