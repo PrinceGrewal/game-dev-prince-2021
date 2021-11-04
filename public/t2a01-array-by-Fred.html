@@ -52,6 +52,19 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
  }
  document.getElementById('myDiv01').innerHTML = mySum
  }">
+<p>Click the button to add a new element to the array.</p>
+<button onclick="myFunction()">Click</button>
+<p id="myId"></p>
+
+<script>
+    var a = ["Pasta", "Apple Pie", "Pancake", "Lasagne"];
+    document.getElementById("myId").innerHTML = a;
+
+    function myFunction() {
+        a.push("Pasta");
+        document.getElementById("myId").innerHTML = a;
+    }
+</script>
 
 <div id="myDiv01">...</div>
 <br>
