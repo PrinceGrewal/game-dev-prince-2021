@@ -35,13 +35,15 @@ function myGrabNumber(){
    document.getElementById('myDiv01').innerHTML = myExampleFunction()
 }">
 
-<h1>FUNCTION</h1>
-<script> 
-        <button onclick="myFunction()">Click here</button>
-        function ShowMessage() {
-                alert("HI");
-        }
-        
-        ShowMessage()
+      
+        <button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
 </script>
+        
 <div id = "myDiv01">... </div>
