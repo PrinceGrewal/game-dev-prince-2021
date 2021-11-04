@@ -66,8 +66,11 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
     }
 </script>
 
-<div id="myDiv01">...</div>
-<br>
+<input type="text" id="text1"></input>
+<input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input>
+<input type="button" id="button2" value="Display" onclick="display_array();"></input>
+<div id="Result"></div> 
+
 var x = 0;
 var array = Array();
 
@@ -89,3 +92,6 @@ function display_array()
    }
    document.getElementById("Result").innerHTML = e;
 }
+
+<div id="myDiv01">...</div>
+<br>
