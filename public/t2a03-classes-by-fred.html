@@ -1,4 +1,4 @@
-Version 0.0.2
+Version 0.0.3
 <h2 align=center>t2a03-Classes-by-Fred.html</h2>
 
 <a href=""> Find a Good refrence to Jvascript Classes</a><br>
@@ -6,6 +6,7 @@ Classes are both Objects that store variables ( Called Properties) and Functions
 
 <h4> Example Classes code</h4>
 <pre>
+class myAnimal {
 constructor(passName, passAge) {
 this.myName = passName;
 this.myAge = passAge;
@@ -26,15 +27,14 @@ Nothing:  <input type=text id="myText01" value="Useless at the moment"><br>
   constructor(passName, passAge) {
       this.myName = passName;
       this.myAge = passAge;
-   }
-   myShow(){
-    document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years
-      old<br>'
-      }
+}
+myShow(){
+document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years
+old<br>'
+}
 }  // end class myAnimal
- myDog = new myAnimal('Snickers', 5)
- myDog.myShow()
-        
- }">                                                                           
+myDog = new myAnimal('Snickers', 5)
+myDog.myShow()
+}">                                                                           
 
 <div id="myDiv01">...</div>
