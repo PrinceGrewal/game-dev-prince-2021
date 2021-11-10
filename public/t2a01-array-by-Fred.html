@@ -1,4 +1,4 @@
-Versioon 0.0.3
+Versioon 0.0.4
 <h2 align=center>t2a01-arrays-by-Fred.html</h2>
 
 <a href="">https://www.w3schools.com/js/js_arrays.asp</a><br>
@@ -96,3 +96,16 @@ document.getElementById("demo").innerHTML = fruits.copyWithin(2,0,2);
 
    <div id="myDiv01">...</div>
 <br>
+   
+        <button onclick="someFunction()">Some</button>    
+        <p id="pDemo"></p>    
+        <script>        
+var marks=[25,35,45,55]        
+function checkMark(mark) {        
+  return mark >= 18;        
+}        
+function someFunction() {        
+  document.getElementById("pDemo").innerHTML = marks.some(checkMark);        
+}        
+</script>    
+ 
