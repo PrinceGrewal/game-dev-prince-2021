@@ -1,4 +1,4 @@
-Versioon 0.0.4
+Versioon 0.0.5
 <h2 align=center>t2a01-arrays-by-Fred.html</h2>
 
 <a href="">https://www.w3schools.com/js/js_arrays.asp</a><br>
@@ -108,4 +108,14 @@ function someFunction() {
   document.getElementById("pDemo").innerHTML = marks.some(checkMark);        
 }        
 </script>    
+
+<button onclick="sliceFunction()">Click here to get a color</button>    
+        <p id="pDemo"></p>    
+        <script>        
+function sliceFunction() {        
+var colors=["Red","Pink","Purple","Blue"];        
+  var sliceColor = colors.slice(2, 3);        
+  document.getElementById("pDemo").innerHTML = sliceColor;        
+}        
+</script>
  
