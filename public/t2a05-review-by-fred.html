@@ -213,3 +213,48 @@ myFun('28')      // This activates the function
 }"><br><br>
 
 <div id='myDiv129'>...</div><br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<div style="font-size:15px; background-color:Aqua; width:88%;  border:5px solid black; padding:5px; margin:5px;"> 
+Classes are everything put together.<br>
+Functions inside a class are called "methods"<br>
+Variables inside a class are called "properties"<br>
+If statements, for loops, arrays, objects are all allowed inside a class<br>
+Classes can be extended, so you can add your own functionality to them<br>
+</div>
+<br>
+<br>
+<input id="myButton130" type="button" value="Make and Show the class myAnimal" onclick="{
+                                                                                 
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+
+    myShow(){
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+
+ }  // end class myAnimal
+                                                             
+   
+                                                                                 
+   myDog = new myAnimal('Snickers', 5)
+   myDog.myShow()                                                       
+}"><br><br>
+
+<div id='myDiv130'>...</div><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
