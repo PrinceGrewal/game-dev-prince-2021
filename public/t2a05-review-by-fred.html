@@ -56,13 +56,9 @@ For loops, making computers do things over and  over and  over and  over and  ov
 </div>
 
 Loop this many times <input type="number" id="myTextLoop" value="10" size="10"> 
-    
-<input id="myButton125" type="button" value="For Loop" onclick="{
-                                                               
-    document.getElementById('myDiv125').innerHTML = ''   // blank out the DIV  
-                                                               
-    for (myLoop = 0;  myLoop <= document.getElementById('myTextLoop').value;    myLoop++){   
-                                                               
+<input id="myButton125" type="button" value="For Loop" onclick="{                                                         
+    document.getElementById('myDiv125').innerHTML = ''   // blank out the DIV                                                         
+    for (myLoop = 0;  myLoop <= document.getElementById('myTextLoop').value;    myLoop++){                                                         
        document.getElementById('myDiv125').innerHTML += 'Loop #'+ myLoop+'<br>'  
                                                                
     }
