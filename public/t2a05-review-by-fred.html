@@ -1,4 +1,4 @@
- Version 0.0.7
+ Version 0.0.8
 
 <h2 align="center">Javascript Review</h2>
 
@@ -123,5 +123,34 @@ Change the number <input type="number" id="myTextIf" value="4" size="10">
       document.getElementById('myDiv126').innerHTML += 'That number equals 4 and is less than 8 <br>'
    }                                                                                                                                                                                                                
 }"><br><br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
 
 <div id='myDiv126'>...</div><br>
+<div style="font-size:15px; background-color:green; width:88%;  border:5px solid yellow; padding:5px; margin:5px;"> 
+Arrays store lots of variables with an index number 
+</div>
+<br>
+<br>
+
+Store these numbers in an array <input type="text" id="myTextArray" value="3, 7, 9" size="10">        
+    
+<input id="myButton127" type="button" value="Store and show array" onclick="{
+                                                              
+      myArray = []
+      document.getElementById('myDiv127').innerHTML = '' // clear the DIV
+                                                              
+      myArray = document.getElementById('myTextArray').value.split(',')   //splits a string into an array  
+                                                              
+      for (myIndex in myArray){                                                                                                                  
+         document.getElementById('myDiv127').innerHTML +=     myIndex + ' stores : ' + myArray[myIndex] + '<br>'
+      }                                                        
+}"><br><br>
+
+<div id='myDiv127'>...</div><br>
