@@ -1,11 +1,12 @@
- Version 0.0.6
+ Version 0.0.7
 
 <h2 align="center">Javascript:</h2>
 
 <div style="font-size:15px; background-color:red; width:88%;  border:5px solid black; padding:5px; margin:5px;"> 
 Input output. Getting the information from the text box into the div
 </div>
-
+<br>
+<br>
 <input type="text" id="myTextIn01" value="Stuff written here" size="30">  
     
 <input id="myButton123" type="button" value="Input / Output" onclick="{
@@ -23,9 +24,8 @@ Input output. Getting the information from the text box into the div
 <div style="font-size:15px; background-color:red; width:88%;  border:5px solid black; padding:5px; margin:5px;"> 
 Input into a variable and convert the stored value to integers, floating point numbers etc.
 </div>
-
- 
-    
+ <br>
+<br>
 <input type="text" id="myTextIn1" value="3.45" size="30">  + <input type="text" id="myTextIn2" value="6.78" size="30"> 
 
 <input id="myButton124" type="button" value="Add the numbers" onclick="{
@@ -75,4 +75,53 @@ Loop this many times <input type="number" id="myTextLoop" value="10" size="10">
 <hr>
 <br>
 <br>
+<div style="font-size:15px; background-color:lightyellow; width:88%;  border:5px solid blue; padding:5px; margin:5px;" class=""> 
+"if statements" make decisions.<br>
+    if (x==4){ print something }<br>
+    
+    Note: The last complex if statement may not correctly show the &amp;&amp; = AND<br>
+    || = OR
+    !=   NOT EQUAL
+</div>
+ <br>
+<br>
+Change the number <input type="number" id="myTextIf" value="4" size="10">     
+    
+<input id="myButton126" type="button" value="If Statements" onclick="{
+      
+   document.getElementById('myDiv126').innerHTML = '' // Clear the DIV
+                                                                    
+   myIf =   document.getElementById('myTextIf').value   // Store the number
+     
+   if (myIf == 4){                                                                
+      document.getElementById('myDiv126').innerHTML += 'That number equals 4 <br>'
+   }   
+                                                                    
+   if (myIf <= 4){                                                                
+      document.getElementById('myDiv126').innerHTML += 'That number is less than 4 <br>'
+   }  
+                                                                            
+   if (Math.abs(myIf) == 4){        // absolute value of -4 = 4                                                         
+      document.getElementById('myDiv126').innerHTML += 'That number is either positive or negative 4<br>'
+   }                                          
+   if (myIf < 0){                                                                
+      document.getElementById('myDiv126').innerHTML += 'That number is a negative number<br>'
+   }                                                                   
+   if (myIf == 4){                                                                
+      document.getElementById('myDiv126').innerHTML += 'That number is less than or equal to 4 <br>'
+   }                                                                    
+   if (myIf >= 4){                                                                
+      document.getElementById('myDiv126').innerHTML += 'That number is greater than or equal to 4 <br>'
+   }                                                                       
+   if (myIf != 4){                                                                
+      document.getElementById('myDiv126').innerHTML += 'That number does not equal 4 <br>'
+   }                                                                       
+   if ((myIf == 4) || (myIf == 8)) {                                                                
+      document.getElementById('myDiv126').innerHTML += 'That number equals either 4 or 8 <br>'
+   }                                                                                                                                              
+   if ((myIf == 4) &amp;&amp; (myIf < 8)) {                                                                
+      document.getElementById('myDiv126').innerHTML += 'That number equals 4 and is less than 8 <br>'
+   }                                                                                                                                                                                                                
+}"><br><br>
 
+<div id='myDiv126'>...</div><br>
