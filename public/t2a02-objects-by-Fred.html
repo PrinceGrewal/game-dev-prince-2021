@@ -1,4 +1,4 @@
-Version 0.0.5
+Version 0.0.6
 <h2 align=center>t2a02-objects-by-Fred.html</h2>
 <a href="">Refrence= https://www.w3schools.com/js/js_objects.asp</a><br>
 Objects are stored named variables
@@ -32,22 +32,24 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 <div id="myDiv01">...</div>
 <br>
 <hr>
-<input type=text id="myText02" value="Useless at the moment"><br>
-
-<input type=button value="Example Object Set and Show" onClick="{
-                                           
+<input type=button value="Example Object Set and Show"
+onClick="{
+ 
    let myPerson = {
-      'First Class' : 'Maths',
-       'Second Class' : 'English',
-        'Third Class': 'Science',
-         'Fourth Class': 'Social Studies'
+      'FirstClass' : 'Life Science',
+       'SecondClass' : 'English',
+        'ThirdClass' : 'Maths',
+         'FourthClass' : 'SocialStudies'
+     
      }
-    document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has properties: <br>'
-    document.getElementById('myDiv01').innerHTML +=  'First Class: ' + myPerson.First Class + '<br>'
-    document.getElementById('myDiv01').innerHTML +=  'Second Class: ' + myPerson.Second Class + '<br>'                                                       
-    document.getElementById('myDiv01').innerHTML +=  'Third Class: ' + myPerson.Third Class + '<br>'
-    document.getElementById('myDiv01').innerHTML +=  'Fourth Class: ' + myPerson.Fourth Class + '<br>'                                                           
+    document.getElementById('myDiv01').innerHTML = '<br>My Subjects: <br>'
+    document.getElementById('myDiv01').innerHTML +=  'FirstClass: ' + myPerson.FirstClass + '<br>'
+    document.getElementById('myDiv01').innerHTML +=  'SecondClass: ' + myPerson.SecondClass + '<br>'                                                       
+    document.getElementById('myDiv01').innerHTML +=  'ThirdClass' + myPerson.ThirdClass + '<br>'
+    document.getElementById('myDiv01').innerHTML +=  'FourthClass' + myPerson.FourthClass + '<br>'                                                     
     }">
 <div id="myDiv01">...</div>
+<hr>
+
 
 <br>
