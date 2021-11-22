@@ -31,3 +31,26 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
     }">
 <div id="myDiv01">...</div>
 <br>
+<hr>
+<input type=text id="myText01" value="Useless at the moment"><br>
+
+<input type=button value="Example Object Set and Show" onClick="{
+                                           
+   let myPerson = {
+      'First Class' : 'Maths',
+       'Second Class' : 'English',
+        'Third Class': 'Science',
+         'Fourth Class': 'Social Studies'
+     }
+    document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has properties: <br>'
+    document.getElementById('myDiv01').innerHTML +=  'First Class: ' + myPerson.First Class + '<br>'
+    document.getElementById('myDiv01').innerHTML +=  'Second Class: ' + myPerson.Second Class + '<br>'                                                       
+    document.getElementById('myDiv01').innerHTML +=  'Third Class' + myPerson.Third Class + '<br>'
+    document.getElementById('myDiv01').innerHTML +=  'Fourth Class' + myPerson.Fourth Class + '<br>'                                                           
+    }">
+<div id="myDiv01">...</div>
+
+
+
+
+<br>
