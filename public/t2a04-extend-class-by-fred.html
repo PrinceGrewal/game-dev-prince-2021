@@ -25,50 +25,6 @@ document.getElementById('myDiv01').innerHTML = this.myName
 </pre>
 <h4> Example working Classes code</h4>
 <input type=button value="Example class set and Show Class Animal" onClick="{
-
-myDog = new myAnimal('Snickers', 5)
-myDog.myshow()
-
-}"> 
-
-<h4> Example extending Class code</h4>
-Nothing: <input type=text id="myText01" value="useless at the moment"><br>
-
-<input id="myButton131" type="button" value="Extend a class" onclick="{
-class myAnimal {
-    constructor(passName, passAge) {
-       this.myName = passName;
-       this.myAge = passAge;
-    }
-    myShow(){
-       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
-    }Version 0.0.1
-<script>
-class myAnimal {
-constructor(passName, passAge) {
-this.myName = passName;
-this.myAge = passAge;
-}
-myshow(){
-     document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
-   }
-} // end class myAnimal
-</script>
-
-Version 0.0.3
-<h2 align=center>t2a04-extend-class-by-fred.html</h2>
-Extending a pre-existing Class<br>
-<h4> Example class extend code</h4>
-<pre>
-
-class myCat extends myAnimal {
-myshow(){
-document.getElementById('myDiv01').innerHTML = this.myName
-}
-}
-</pre>
-<h4> Example working Classes code</h4>
-<input type=button value="Example class set and Show Class Animal" onClick="{
 myDog = new myAnimal('Snickers', 5)
 myDog.myshow()
 }"> 
@@ -92,18 +48,3 @@ class myCat extends myAnimal {
        document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'
     }                                                                   
 }    // end extended class myCat
- }  // end class myAnimal
-                                                             
-class myCat extends myAnimal {                                                                      
-     myShow(){
-       document.getElementById('myDiv131').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'
-    }                                                                   
-}    // end extended class myCat
-                                                                     
-                                                              
-                                                                                                                                                                                                       
-   myPet = new myCat('Fluffy', 14)
-   myPet.myShow()                                                                           
-}"><br><br>
-
-<div id='myDiv131'>...</div><br>
