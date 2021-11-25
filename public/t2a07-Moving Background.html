@@ -1,4 +1,4 @@
-<br>
+
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://graphicriver.img.customer.envatousercontent.com/files/287540824/snowy%20mountains%20_pv.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=fabde8884b9c477c687f24ee22ab8294">
 
 <script>
@@ -9,6 +9,12 @@
 <input id="myButton01" type=button value="Background move left" onclick="{
   myTemp = '100px 0px'
   myGlobalX -= 20
+  myTemp =  myGlobalX + 'px 0px'
+  document.getElementById('myBody').style.backgroundPosition =myTemp
+}">
+<input id="myButton01" type=button value="Background move right" onclick="{
+  myTemp = '100px 0px'
+  myGlobalX += 20
   myTemp =  myGlobalX + 'px 0px'
   document.getElementById('myBody').style.backgroundPosition =myTemp
 }">
@@ -24,14 +30,21 @@
 <br>
 <br>
 <input type="button" value="Image Left" onclick="{
-  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 20 + 'px'
 }">
 <input type="button" value="Image Right" onclick="{
-  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 20 + 'px'
 }">
-<input type=button value="Auto Image Right">
+<input type="button" value="Image Down" onclick="{
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 20 + 'px'
+}">
+<input type="button" value="Image Up" onclick="{
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 20 + 'px'
+}">
+
 
 <br>
 <img id="myImage01" style="position:relative; width:170px; height:150px; top:100px; left:0px;" src="https://imgur.com/b3QbNi2.jpg">
 <br>
 <br>
+
