@@ -1,15 +1,62 @@
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://imgur.com/nOrBngI.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=fabde8884b9c477c687f24ee22ab8294">
 
-<script>
-   let myGlobalX = 0
-   let myClock
+
+<script language='JavaScript' type='text/JavaScript'>
+<!--
+var dir_h='right';
+var dir_v='down';
+function reset1(){
+clearTimeout(my_time);
+document.getElementById('i1').style.left= "500px";
+document.getElementById('i1').style.top= "100px";
+document.getElementById("msg").innerHTML="";
+}
+
+function disp(dir){
+var step=15;
+var y=document.getElementById('i1').offsetTop;
+var x=document.getElementById('i1').offsetLeft;
+
+switch (dir) {
+case 'D':
+		if( y <500){y= y + step;}
+		break;
+case 'L':
+     	if( x >100){x= x - step;}
+		break;
+case 'R':
+     	if( x <900){x= x + step;}
+		break;
+case 'T':
+		if( y >100){y= y - step;}
+		break;
+
+}
+
+document.getElementById('i1').style.top= y + "px";
+document.getElementById('i1').style.left= x + "px";
+document.getElementById("msg").innerHTML="X: " + x  + " Y : " + y
+
+}
+document.onkeydown = function() {
+    switch (window.event.keyCode) {
+        case 37:
+            disp('L')
+            break;
+        case 38:
+            disp('T')
+            break;
+        case 39:
+            disp('R')
+            break;
+        case 40:
+            disp('D')       
+            break;
+    }
+};
+
 </script>
 
-<br>
-<br>
-<br>
+<img src=https://imgur.com/b3QbNi2.jpg id='i1' style="position:absolute; left: 400; top: 150;">
 
-<br>
-<img id="myImage01" style="position:relative; width:170px; height:150px; top:100px; left:0px;" src="https://imgur.com/b3QbNi2.jpg">
-<br>
-<br>
+<div id='msg'></div>
